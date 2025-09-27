@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Govind Sharma - Aspiring Data Scientist">
+  <title>Govind Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f7fdfa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    nav {
+      background: #a8e6cf;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #86dcb3;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 5%;
+      background: #d0f0e3;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #86dcb3;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #63c495;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+      padding: 60px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+    }
+
+    .about-text h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .about-text p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .about img {
+      flex: 1 1 250px;
+      max-width: 300px;
+      border-radius: 50%;
+      border: 5px solid #a8e6cf;
+    }
+
+    /* ---------- SKILLS ---------- */
+    .skills {
+      background: #f0fdfa;
+      padding: 60px 5%;
+      text-align: center;
+    }
+
+    .skills h2 {
+      margin-bottom: 30px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #a8e6cf;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+
+    /* ---------- PROJECTS ---------- */
+    .projects {
+      padding: 60px 5%;
+      text-align: center;
+    }
+
+    .projects h2 {
+      margin-bottom: 30px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .project-card p {
+      color: #555;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: #d0f0e3;
+      padding: 60px 5%;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #00796b;
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #a8e6cf;
+      text-align: center;
+      padding: 15px 5%;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width:768px){
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .about {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Govind Sharma</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Hi, I'm Govind Sharma 👋</h1>
+    <p>Aspiring Data Scientist | FYDS Student</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="Govind Sharma Photo">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I’m Govind Sharma, a first-year data science student (FYDS) passionate about data analysis, automation, and insights-driven decision-making.</p>
+      <p>I aim to become a professional data scientist and am currently exploring Python, Excel, Word, and PowerPoint along with data visualization tools.</p>
+      <p>Outside academics, I enjoy problem-solving, blogging about tech, and learning about AI/ML trends.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">Python</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Word</div>
+      <div class="skill">PowerPoint</div>
+      <div class="skill">Data Visualization</div>
+      <div class="skill">Machine Learning Basics</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h2>Projects & Achievements</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Data Cleaning with Python</h3>
+        <p>Built a Python script to clean and preprocess large datasets for analysis.</p>
+      </div>
+      <div class="project-card">
+        <h3>Excel Dashboard</h3>
+        <p>Created an interactive sales dashboard in Excel with KPIs and charts.</p>
+      </div>
+      <div class="project-card">
+        <h3>PowerPoint Presentation</h3>
+        <p>Designed impactful presentations to communicate data-driven insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:govindsharma@example.com">govindsharma@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/govindsharma</a></p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Govind Sharma. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
